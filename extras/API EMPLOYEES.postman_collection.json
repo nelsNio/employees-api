@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "0d097bb9-fdec-4447-8ee0-82edf2b9ef51",
+		"name": "API EMPLOYEES",
+		"description": "API TO ADMIN EMPLOYEES AND MANAGE PAYMENTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create: New Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"namme\":\"Alguien1\",\n    \"lastName\": \"Nino\",\n    \"admissionDate\":\"2021-01-07\",\n    \"baseSalary\":1222.223\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve: Get AllEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"namme\":\"Alguien1\",\n    \"lastName\": \"Nino\",\n    \"admissionDate\":\"2021-01-07\",\n    \"baseSalary\":1222.223\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve: Get Employee by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"namme\":\"Alguien1\",\n    \"lastName\": \"Nino\",\n    \"admissionDate\":\"2021-01-07\",\n    \"baseSalary\":1222.223\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put: Update Employee by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idEmployee\":24,\n    \"name\":\"Alguien022\",\n    \"lastName\": \"Nino\",\n    \"admissionDate\":\"2021-01-07\",\n    \"baseSalary\":1222.223\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/246/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"246",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL: Destroy Employee by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idEmployee\":24,\n    \"name\":\"Alguien022\",\n    \"lastName\": \"Nino\",\n    \"admissionDate\":\"2021-01-07\",\n    \"baseSalary\":1222.223\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/246/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"246",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL: Destroy Employee by ID Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idEmployee\":2,\n    \"year\":2021,\n    \"month\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/pay/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"pay",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
